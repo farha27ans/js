@@ -33,3 +33,32 @@ const myFunction =function(){
 }
 
 https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+
+// Memoryy
+
+//Stack(Primitive)-> Jo bhi variable apne create kiya hai uski ek copy milti hai
+// , Heap(Non-Primitive)-> Reference original value
+
+let myYoutubename = "hiteshchoudharydot.com"
+
+let anothername = myYoutubename
+anothername = "chaiaurcode"
+
+console.log(anothername);//hiteshchoudharydot.com
+
+console.log(anothername);//chaiaurcode
+
+let user ={
+    email:"usergoogle.com",
+    upi:"user@ybl"
+}
+
+
+let userTwo = userOne
+
+userTwo.email = "hitesh@google.com"
+
+console.log( userOne.email);//hitesh@google.com
+console.log( userTwo.email);//hitesh@google.com
